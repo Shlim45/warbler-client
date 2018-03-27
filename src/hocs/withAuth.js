@@ -25,6 +25,6 @@ export default function withAuth(ComponentToBeRendered) {
             isAuthenticated: state.currentUser.isAuthenticated,
         };
     }
-    
+
     return connect(mapStateToProps)(Authenticate);
 }
